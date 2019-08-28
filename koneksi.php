@@ -1,8 +1,11 @@
-<?php 
-// isi nama host, username mysql, dan password mysql anda
-$host = mysql_connect("localhost","root","");
+<?php
+	date_default_timezone_set('Asia/Jakarta');
+	session_start();
 
-// isikan dengan nama database yang akan di hubungkan
-$db = mysql_select_db("ujk2016tahap2");
+	$con = mysqli_connect('localhost', 'root','','ujk2018tahap1');
+	if(mysqli_connect_errno()) {
+		echo mysqli_connect_error();
+	}
+
 
 ?>

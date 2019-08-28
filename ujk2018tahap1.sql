@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.7.0
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 19 Agu 2019 pada 14.00
--- Versi Server: 10.1.19-MariaDB
--- PHP Version: 5.6.28
+-- Generation Time: Jul 23, 2019 at 07:12 AM
+-- Server version: 10.1.25-MariaDB
+-- PHP Version: 7.1.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -17,32 +19,31 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `ujk2016tahap2`
+-- Database: `ujk2018tahap1`
 --
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `transaksi`
+-- Table structure for table `transaksi`
 --
 
 CREATE TABLE `transaksi` (
   `kode_transaksi` char(15) NOT NULL,
   `nama_barang` varchar(70) NOT NULL,
   `harga` int(8) NOT NULL,
-  `diskon` decimal(8,0) DEFAULT NULL,
-  `total` decimal(8,0) DEFAULT NULL
+  `diskon` decimal(8,2) NOT NULL,
+  `total` decimal(8,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `transaksi`
+-- Dumping data for table `transaksi`
 --
 
 INSERT INTO `transaksi` (`kode_transaksi`, `nama_barang`, `harga`, `diskon`, `total`) VALUES
-('1234', 'buku', 75000, '3750', '71250'),
-('A1', 'Kulkas', 3000000, '300000', '2700000'),
-('A8', 'Sabun', 130000, '13000', '117000'),
-('hhh', 'aaaa', 190000, '19000', '171000');
+('INV001', 'monitor', 100000, '0.10', '90000.00'),
+('INV002', 'mouse', 80000, '0.05', '76000.00'),
+('INV007', 'keyboard', 250000, '0.10', '225000.00');
 
 --
 -- Indexes for dumped tables
@@ -53,6 +54,7 @@ INSERT INTO `transaksi` (`kode_transaksi`, `nama_barang`, `harga`, `diskon`, `to
 --
 ALTER TABLE `transaksi`
   ADD PRIMARY KEY (`kode_transaksi`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

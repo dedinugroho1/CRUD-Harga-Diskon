@@ -1,8 +1,8 @@
+<?php
+require_once "koneksi.php";
+	
 
-<?php 
-include 'koneksi.php';
+	mysqli_query($con, "DELETE FROM transaksi WHERE kode_transaksi = '$_GET[id]' ") or die (mysqli_error($con));
+echo "<script>window.location='index.php';</script>";
 
-mysql_query("DELETE FROM transaksi WHERE kode_transaksi = '$_GET[id]'");
- 
-header("location:simpan2.php?pesan=hapus");
 ?>

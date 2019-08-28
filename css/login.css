@@ -1,0 +1,104 @@
+body {
+    margin: -40px;
+    padding: 0;
+}
+
+#login {
+
+    max-width: 400px;
+    margin: 100px auto;
+    background: #f9f9f9;
+    box-shadow: 0 0 10px #aaa;
+}
+
+#login h3 {
+
+    text-align: center;
+    padding: 25px 10px;
+    background-color: #101010;
+    color: #ffffff;
+}
+
+fieldset {
+    margin: 0;
+    border: none;
+}
+
+form {
+    padding: 0;
+    margin: 0;
+    padding: 15px;
+}
+
+input[type='username'],
+input[type='text'],
+input[type="password"] {
+    width: 100%;
+    padding: 1em;
+    margin-top: 1.2em;
+    color: #000000;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 1.4em;
+    margin: 1.5em 0;
+    color: #00cdb1;
+    background-color: #101010;
+    border: none;
+    color: #ffffff;
+    border-bottom: 4px solid transparent;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.8;
+    border-color: #00cdb1;
+}
+
+input[type="reset"] {
+    width: 100%;
+    padding: 1.4em;
+    margin: 0;
+    color: #00cdb1;
+    background-color: #101010;
+    border: none;
+    color: #ffffff;
+    border-bottom: 4px solid transparent;
+}
+
+input[type="reset"]:hover {
+    opacity: 0.8;
+    border-color: #00cdb1;
+}
+
+form p {
+    text-align: center;
+    color: #888;
+    width: 30px;
+    margin: 10px auto 0;
+    background: #f9f9f9;
+    position: relative;
+    bottom: 20px;
+}
+
+.border-p {
+    border-top: 1px solid #888;
+    margin: 10px 10px;
+}
+
+button {
+    background-color: #3b5998;
+    width: 100%;
+    padding: 1.4em;
+    margin-bottom: 1em;
+    color: #888;
+    ;
+    border: none;
+    color: #4682b5;
+    border-bottom: 4px solid transparent;
+}
+
+button:hover {
+    opacity: 0.9;
+    border-color: #3b3998;
+}
